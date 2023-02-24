@@ -1,20 +1,17 @@
 <a href="https://pargovernment.com/sitx" target="_new"><img
-  src="https://github.com/ampledata/node-red-contrib-sitx/raw/master/docs/app_icon.png"
+  src="https://github.com/ampledata/node-red-contrib-sitx/raw/main/docs/app_icon.png"
   alt="Sit(x) App Logo"
   width="128"
   height="128"
 /></a>
 <b>+</b>
 <a href="https://nodered.org" target="_new"><img
-  src="https://github.com/ampledata/node-red-contrib-sitx/raw/master/docs/node-red-icon-2.png"
+  src="https://github.com/ampledata/node-red-contrib-sitx/raw/main/docs/node-red-icon-2.png"
   alt="Node-RED Logo"
   width="128"
   height="128"
 /></a>
-[![Build Status](https://travis-ci.org/ampledata/node-red-contrib-sitx.svg?branch=master)](https://travis-ci.org/ampledata/node-red-contrib-sitx)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ampledata/node-red-contrib-sitx/graphs/commit-activity)
-[![HitCount](http://hits.dwyl.io/ampledata/node-red-contrib-sitx.svg)](http://hits.dwyl.io/ampledata/node-red-contrib-sitx)
-[![Dependencies Status](https://img.shields.io/david/ampledata/node-red-contrib-sitx.svg)](https://david-dm.org/ampledata/node-red-contrib-sitx)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Issues](https://img.shields.io/github/issues/ampledata/node-red-contrib-sitx.svg?style=flat-square)](https://github.com/ampledata/node-red-contrib-sitx/issues)
 <!--
