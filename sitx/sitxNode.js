@@ -39,11 +39,12 @@ const makeSitxNode = (RED) => {
 
     node.status({ fill: 'red', shape: 'dot', text: 'Initializing' });
 
+    let socket;
     sitxLib.auth(node.subdomain, node.accessKeyID, node.secretKey, node.scope).then((res) => {
       let authHeader = `Bearer ${res.access_token}`;
-      let wsURL = `https://${node.subdomain}.takserver.parteamconnect.com/${node.group}`;
-
-      let socket = new WebSocket(
+      let wsURL = `wss://${node.subdomain}.takserver.parteamconnect.com/${node.group}`;
+      console.log(`wsURL=${wsURL}`)
+      socket = new WebSocket(
         wsURL, [], { headers: { "Authorization": authHeader } }
       );
 
@@ -73,17 +74,34 @@ const makeSitxNode = (RED) => {
 
       socket.on("close", () => {
         node.status({ fill: "red", shape: "ring", text: "Closed" });
+        this.on("close", function(msg) { 
+
+          // DOES THIS WORK?
+          console.log("Close event: " + msg);
+          socket = new WebSocket(
+            wsURL, [], { headers: { "Authorization": authHeader } }
+          );
+
+        })
       });
 
       socket.on("open", () => {
         node.status({ fill: "green", shape: "dot", text: "Open" });
+        this.on("input", function(msg, nodeSend, nodeDone) {
+          node.status({ fill: "yellow", shape: "dot", text: "Transmitting" });
+          console.log("Sending: " + msg.payload)
+          console.log(socket.send(msg.payload));
+          nodeDone();
+        });
       });
 
       socket.on("message", (data, flags) => {
-        // msg.payload = data;
-        node.send(data);
+        node.status({ fill: "green", shape: "dot", text: "Receiving" });
+        msg = { payload: data };
+        node.send(msg);
       });
     });
+
   }
 
   RED.nodes.registerType('Sit(x) Node', SitxNode, {
