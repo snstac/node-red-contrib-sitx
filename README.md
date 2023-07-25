@@ -23,7 +23,7 @@
 node-red-contrib-sitx
 ======================
 
-<a href="https://www.nodered.org" target="_new">Node-RED</a> nodes to talk to <a href="https://pargovernment.com/sitx" target="_new">Sit(x)</a>.
+<a href="https://www.nodered.org" target="_new">Node-RED</a> nodes to talk to <a href="https://pargovernment.com/sitx" target="_new">PAR Sit(x)</a> (fka TeamConnect).
 
 Install
 -------
@@ -36,11 +36,11 @@ $ npm install node-red-contrib-sitx
 
 # Requirements
 
-To use these nodes you must have a Sit(x) account.
+To use these nodes you must have a PAR Sit(x) account.
 
 # Copyright & License
 
-Copyright 2023 Greg Albrecht <oss@undef.net>
+Copyright 2023 Sensors & Signals LLC
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

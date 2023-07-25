@@ -2,9 +2,9 @@
 /**
  * PAR Sit(x) Node-RED Nodes.
  *
- * @module node-red-contrib-sitx/sitxLib
- * @author Greg Albrecht <oss@undef.net>
- * @copyright 2023 Greg Albrecht <oss@undef.net>
+ * @module node-red-contrib-sitx
+ * @author Greg Albrecht <gba@snstac.com>
+ * @copyright 2023 Sensors & Signals LLC
  * @license Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the 'License');
@@ -25,7 +25,8 @@
 const axios = require("axios");
 
 const auth = (subdomain, accessKeyID, secretKey, scope, grant_type="client_credentials") => {
-  const authURL = `https://${subdomain}.parteamconnect.com/api/v1/client_auth/token`;
+  const AUTH_TOKEN_PATH = "/api/v1/client_auth/token";
+  const authURL = `https://${subdomain}.parteamconnect.com${AUTH_TOKEN_PATH}`;
 
   let payload = {
     grant_type: grant_type,

@@ -1,8 +1,8 @@
 # Makefile for node-red-contrib-sitx
 #
-# Source:: https://github.com/ampledata/node-red-contrib-sitx
-# Author:: Greg Albrecht <oss@undef.net>
-# Copyright:: Copyright 2023 Greg Albrecht
+# Source:: https://github.com/snstac/node-red-contrib-sitx
+# Author:: Greg Albrecht <gba@snstac.com>
+# Copyright:: Copyright 2023 Sensors & Signals LLC
 # License:: Apache License, Version 2.0
 #
 

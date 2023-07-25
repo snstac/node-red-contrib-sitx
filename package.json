@@ -1,23 +1,22 @@
 {
     "name": "node-red-contrib-sitx",
-    "version": "1.0.0b1",
+    "version": "1.0.0-beta",
     "description": "Node-RED Nodes for bridging to PAR Sit(x).",
     "license": "Apache-2.0",
-    "url": "https://github.com/ampledata/node-red-contrib-sitx",
+    "url": "https://github.com/snstac/node-red-contrib-sitx",
     "author": {
         "name": "Greg Albrecht",
         "email": "oss@undef.net",
-        "url": "https://ampledata.org"
+        "url": "https://www.snstac.com"
     },
-    "homepage": "https://github.com/orion-labs/node-red-contrib-sitx",
+    "homepage": "https://github.com/snstac/node-red-contrib-sitx",
     "dependencies": {
-        "node-red": "^2.0.0",
-        "reconnecting-websocket": "^4.4.0",
-        "ws": "^8.9.0"
+        "node-red": "^2.88.2",
+        "ws": "^8.13.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/orion-labs/node-red-contrib-sitx"
+        "url": "https://github.com/snstac/node-red-contrib-sitx"
     },
     "keywords": [
         "node-red"

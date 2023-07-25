@@ -3,8 +3,8 @@
  * PAR Sit(x) Node-RED Nodes.
  *
  * @module node-red-contrib-sitx
- * @author Greg Albrecht <oss@undef.net>
- * @copyright 2023 Greg Albrecht <oss@undef.net>
+ * @author Greg Albrecht <gba@snstac.com>
+ * @copyright 2023 Sensors & Signals LLC
  * @license Apache-2.0
  * 
  * Licensed under the Apache License, Version 2.0 (the 'License');
