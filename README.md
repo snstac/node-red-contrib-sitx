@@ -11,27 +11,32 @@
   width="128"
   height="128"
 /></a>
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ampledata/node-red-contrib-sitx/graphs/commit-activity)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Issues](https://img.shields.io/github/issues/ampledata/node-red-contrib-sitx.svg?style=flat-square)](https://github.com/ampledata/node-red-contrib-sitx/issues)
-<!--
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
--->
-[![NPM](https://nodei.co/npm/node-red-contrib-sitx.png)](https://nodei.co/npm/node-red-contrib-sitx/)
 
+# node-red-contrib-sitx
 
-node-red-contrib-sitx
-======================
+[Node-RED](https://www.nodered.org) Node for sending & receiving Cursor on Target TAK Data with [PAR Sit(x)](https://pargovernment.com/sitx) (fka TeamConnect) Bridge Adaptor.
 
-<a href="https://www.nodered.org" target="_new">Node-RED</a> nodes to talk to <a href="https://pargovernment.com/sitx" target="_new">PAR Sit(x)</a> (fka TeamConnect).
+To serialize data as Cursor on Target TAK Data use [node-red-contrib-tak](https://github.com/snstac/node-red-contrib-tak).
 
-Install
--------
+## Install
 
-Run the following command in your Node-RED user directory - typically `~/.node-red`
+There are two methods to install this and other Node-RED Nodes:
+
+### Method 1: GUI (preferred)
+
+| ![GUI Install 1](./docs/gui_install1.png)                                                                                                                   |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ol><li>Click the "hamburger" menu in the upper right.</li><li>Click **Manage Palette**</li><ol>                                                            |
+| ![GUI Install 2](./docs/gui_install2.png)                                                                                                                   |
+| <ol start=3><li>Select **Install** tab.</li><li>Enter **tak** in search box.</li><li>On the node-red-contrib-tak entry, Click **Install** button.</li></ol> |
+
+### Method 2: CLI (advanced)
+
+Run the following command in your Node-RED user directory - typically `~/.node-red`, then restart node-red:
 
 ```bash
-$ npm install node-red-contrib-sitx
+cd ~/.node-red
+npm install node-red-contrib-tak
 ```
 
 # Requirements

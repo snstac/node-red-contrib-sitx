@@ -1,5 +1,4 @@
-node-red-contrib-orion Examples
-===============================
+# node-red-contrib-orion Examples
 
 This directory contains many examples using [Orion Node-RED](https://github.com/orion-labs/node-red-contrib-orion) nodes.
 

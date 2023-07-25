@@ -27,3 +27,6 @@ eslint:
 
 jslint:
 	jslint sitx/*.js
+
+prettier:
+	npx prettier --write .

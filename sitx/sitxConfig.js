@@ -6,7 +6,7 @@
  * @author Greg Albrecht <gba@snstac.com>
  * @copyright 2023 Sensors & Signals LLC
  * @license Apache-2.0
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the 'License');
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -31,12 +31,12 @@ const makeSitxConfigNode = (RED) => {
     this.group = config.group;
   }
   RED.nodes.registerType('sitx_config', SitxConfig, {
-    credentials: { 
-      accessKeyID: { type: "text" },
-      secretKey: { type: "text" },
-      subdomain: { type: "text" },
-      scope: { type: "text" },
-      group: { type: "text" },
+    credentials: {
+      accessKeyID: { type: 'text' },
+      secretKey: { type: 'text' },
+      subdomain: { type: 'text' },
+      scope: { type: 'text' },
+      group: { type: 'text' },
     },
   });
 };

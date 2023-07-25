@@ -6,7 +6,7 @@
  * @author Greg Albrecht <gba@snstac.com>
  * @copyright 2023 Sensors & Signals LLC
  * @license Apache-2.0
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the 'License');
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -21,24 +21,23 @@
 /* jslint node: true */
 /* jslint white: true */
 
+const axios = require('axios');
 
-const axios = require("axios");
-
-const auth = (subdomain, accessKeyID, secretKey, scope, grant_type="client_credentials") => {
-  const AUTH_TOKEN_PATH = "/api/v1/client_auth/token";
+const auth = (subdomain, accessKeyID, secretKey, scope, grant_type = 'client_credentials') => {
+  const AUTH_TOKEN_PATH = '/api/v1/client_auth/token';
   const authURL = `https://${subdomain}.parteamconnect.com${AUTH_TOKEN_PATH}`;
 
   let payload = {
     grant_type: grant_type,
     client_id: accessKeyID,
     client_secret: secretKey,
-    scope: scope
+    scope: scope,
   };
 
   let options = {
     url: authURL,
-    method: "POST",
-    data: payload
+    method: 'POST',
+    data: payload,
   };
 
   return new Promise((resolve, reject) => {

@@ -40,12 +40,11 @@ Source:: https://github.com/snstac/node-red-contrib-sitx
 </script>
 
 <script type="text/x-red" data-help-name="sitx_config">
-    <p>Authentication for PAR Sit(x) Bridge Adaptor API.</p>
-    <p>Requires a Access Key ID, Secret Key, Subdomain, Group & Authorized Scope.</p>
+  <p>Authentication for PAR Sit(x) Bridge Adaptor API.</p>
+  <p>Requires a Access Key ID, Secret Key, Subdomain, Group & Authorized Scope.</p>
 
-    <p><a href="https://github.com/snstac/node-red-contrib-sitx">More info.</a></p>
+  <p><a href="https://github.com/snstac/node-red-contrib-sitx">More info.</a></p>
 </script>
-
 
 <script type="text/x-red" data-template-name="Sit(x) Node">
   <div class="form-row">
@@ -65,27 +64,27 @@ Source:: https://github.com/snstac/node-red-contrib-sitx
 </script>
 
 <script type="text/javascript">
-  const nodeCategory = "network";
-  const nodeColor = "#2FC726";
-  const nodeIcon = "sitx.png";
+  const nodeCategory = 'network';
+  const nodeColor = '#2FC726';
+  const nodeIcon = 'sitx.png';
 
   // eslint-disable-next-line no-undef
-  RED.nodes.registerType("sitx_config", {
-    category: "config",
+  RED.nodes.registerType('sitx_config', {
+    category: 'config',
     color: nodeColor,
     icon: nodeIcon,
     labelStyle: function () {
-      return this.name ? "node_label_italic" : "";
+      return this.name ? 'node_label_italic' : '';
     },
     defaults: {
-      name: { value: "", required: false },
+      name: { value: '', required: false },
     },
     credentials: {
-      accessKeyID: { type: "text" },
-      secretKey: { type: "text" },
-      scope: { type: "text" },
-      subdomain: { type: "text" },
-      group: { type: "text" },
+      accessKeyID: { type: 'text' },
+      secretKey: { type: 'text' },
+      scope: { type: 'text' },
+      subdomain: { type: 'text' },
+      group: { type: 'text' },
     },
     label: function () {
       if (this.name) {
@@ -95,23 +94,23 @@ Source:: https://github.com/snstac/node-red-contrib-sitx
   });
 
   // eslint-disable-next-line no-undef
-  RED.nodes.registerType("Sit(x) Node", {
+  RED.nodes.registerType('Sit(x) Node', {
     category: nodeCategory,
     color: nodeColor,
     icon: nodeIcon,
     labelStyle: function () {
-      return this.name ? "node_label_italic" : "";
+      return this.name ? 'node_label_italic' : '';
     },
     defaults: {
-      name: { value: "" },
-      sitx_config: { value: "", type: "sitx_config" },
+      name: { value: '' },
+      sitx_config: { value: '', type: 'sitx_config' },
     },
     inputs: 1,
     outputs: 1,
     label: function () {
       // eslint-disable-next-line no-undef
       let levelNode = RED.nodes.node(this.sitx_config);
-      return this.name || (levelNode ? levelNode.label() : "Sit(x)");
-    }
+      return this.name || (levelNode ? levelNode.label() : 'Sit(x)');
+    },
   });
 </script>
