@@ -110,7 +110,7 @@ const makeSitxNode = (RED) => {
       const status = {
         fill: 'red',
         shape: 'ring',
-        text: event.err.message,
+        text: 'Socket Closed',
       };
       node.status(status);
     });

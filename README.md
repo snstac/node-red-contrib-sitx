@@ -14,13 +14,15 @@
 
 # node-red-contrib-sitx
 
-[Node-RED](https://www.nodered.org) Node for sending & receiving TAK Cursor on Target with [PAR Sit(x)](https://pargovernment.com/sitx) (fka TeamConnect) Bridge Adaptor.
+[Node-RED](https://www.nodered.org) Node for sending & receiving [TAK Product](https://www.tak.gov) Cursor on Target data with [PAR Sit(x)](https://pargovernment.com/sitx) (fka TeamConnect) Bridge Adaptors.
 
 To serialize data as TAK Cursor on Target use [node-red-contrib-tak](https://github.com/snstac/node-red-contrib-tak).
 
+This software is built and maintained by [Sensors & Signals](https://www.snstac.com). Click [here](https://github.com/PAR-Government/node_red_sitx_bridge_adapter) to view PAR's version.
+
 ## Copyright & License
 
-Copyright 2023 Sensors & Signals LLC
+Copyright 2023 [Sensors & Signals LLC](https://www.snstac.com)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
