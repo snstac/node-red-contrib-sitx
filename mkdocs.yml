@@ -10,9 +10,9 @@ theme:
   highlightjs: true
 
 plugins:
-  - include-markdown
-    opening_tag: "{!"
-    closing_tag: "!}"
+  - include-markdown:
+      opening_tag: "{!"
+      closing_tag: "!}"
   - search
   - mkdocstrings:
       handlers:
