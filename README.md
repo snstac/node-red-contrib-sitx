@@ -14,36 +14,11 @@
 
 # node-red-contrib-sitx
 
-[Node-RED](https://www.nodered.org) Node for sending & receiving Cursor on Target TAK Data with [PAR Sit(x)](https://pargovernment.com/sitx) (fka TeamConnect) Bridge Adaptor.
+[Node-RED](https://www.nodered.org) Node for sending & receiving TAK Cursor on Target with [PAR Sit(x)](https://pargovernment.com/sitx) (fka TeamConnect) Bridge Adaptor.
 
-To serialize data as Cursor on Target TAK Data use [node-red-contrib-tak](https://github.com/snstac/node-red-contrib-tak).
+To serialize data as TAK Cursor on Target use [node-red-contrib-tak](https://github.com/snstac/node-red-contrib-tak).
 
-## Install
-
-There are two methods to install this and other Node-RED Nodes:
-
-### Method 1: GUI (preferred)
-
-| ![GUI Install 1](./docs/gui_install1.png)                                                                                                                   |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ol><li>Click the "hamburger" menu in the upper right.</li><li>Click **Manage Palette**</li><ol>                                                            |
-| ![GUI Install 2](./docs/gui_install2.png)                                                                                                                   |
-| <ol start=3><li>Select **Install** tab.</li><li>Enter **tak** in search box.</li><li>On the node-red-contrib-tak entry, Click **Install** button.</li></ol> |
-
-### Method 2: CLI (advanced)
-
-Run the following command in your Node-RED user directory - typically `~/.node-red`, then restart node-red:
-
-```bash
-cd ~/.node-red
-npm install node-red-contrib-tak
-```
-
-# Requirements
-
-To use these nodes you must have a PAR Sit(x) account.
-
-# Copyright & License
+## Copyright & License
 
 Copyright 2023 Sensors & Signals LLC
 

@@ -30,3 +30,8 @@ jslint:
 
 prettier:
 	npx prettier --write .
+
+mkdocs:
+	pip install -r docs/requirements.txt
+	mkdocs serve
+
