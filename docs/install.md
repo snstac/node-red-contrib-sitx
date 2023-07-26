@@ -25,8 +25,8 @@ You can confirm installation by clicking the **Nodes** tab:
 
 This method requires Internet access to download a package, but does not require Internet access on the system running Node-RED.
 
-- I. From a system with Internet access, download an archive of [node-red-contrib-sitx](https://registry.npmjs.org/node-red-contrib-sitx/-/node-red-contrib-sitx-1.0.1.tgz)
-- II. Copy node-red-contrib-sitx-1.0.1.tgz to a USB drive (or other removable media).
+- I. From a system with Internet access, download an archive of [node-red-contrib-sitx](https://registry.npmjs.org/node-red-contrib-sitx/-/node-red-contrib-sitx-1.0.2.tgz)
+- II. Copy node-red-contrib-sitx-1.0.2.tgz to a USB drive (or other removable media).
 - III. Insert USB drive or media into system running Node-RED.
 
 ![Method B 1](install/gui_install-sitx1.png)
