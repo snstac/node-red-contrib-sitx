@@ -20,6 +20,8 @@ To serialize data as TAK Cursor on Target use [node-red-contrib-tak](https://git
 
 This software is built and maintained by [Sensors & Signals](https://www.snstac.com). Click [here](https://github.com/PAR-Government/node_red_sitx_bridge_adapter) to view PAR's version.
 
+[Documentation is available here.](https://node-red-sitx-node.readthedocs.io/)
+
 ## Copyright & License
 
 Copyright 2023 [Sensors & Signals LLC](https://www.snstac.com)
