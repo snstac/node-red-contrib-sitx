@@ -1,4 +1,4 @@
-# Installation Guide
+# Installation
 
 There are **3 methods** of installing this Node, chose the method that fits your environment.
 
